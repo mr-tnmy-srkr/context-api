@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import Cousin from '../Cousin/Cousin';
 import { MoneyContext } from '../Grandpa/Grandpa';
+import "./Aunty.css"
 
 const Aunty = () => {
 
@@ -14,7 +15,7 @@ const Aunty = () => {
                 <Cousin name={'Rubaiya'}></Cousin>
             </section>
             <p>Money : Rs.{money}</p>
-            <button onClick={()=>setMoney(money+1000)}>Add Rs.1000/-</button>
+            <button className='btn-style'>Add Rs.1000/-</button>
         </div>
     );
 };
