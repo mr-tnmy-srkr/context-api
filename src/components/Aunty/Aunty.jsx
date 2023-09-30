@@ -15,7 +15,7 @@ const Aunty = () => {
                 <Cousin name={'Rubaiya'}></Cousin>
             </section>
             <p>Money : Rs.{money}</p>
-            <button className='btn-style'>Add Rs.1000/-</button>
+            <button onClick={()=>setMoney(money+1000)} className='btn-style'>Add Rs.1000/-</button>
         </div>
     );
 };
